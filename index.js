@@ -89,7 +89,7 @@ function converter(data) {
 }
 
 function dataInjector(lineItems) {
-  if (lineItems.length > 1) {
+  if (lineItems.length >= 1) {
     let lambai = lineItems.length;
     creator(lambai);
     for (let i = 0; i < lambai; i++) {
@@ -140,7 +140,7 @@ function sabkaSum(total) {
 }
 function createNewJson() {
   objectMaker(product);
-  let jsonBorn = [{
+  let jsonBorn = {
     seller_name: "Bofrike",
     seller_address:
       "LIG-52, SEC-32, CHANDIGARH ROAD, NEAR GREENLAND SCHOOL, LUDHIANA, 141008",
@@ -203,7 +203,7 @@ function createNewJson() {
       pin: 141008,
     },
     items: items,
-  }];
+  };
   return JSON.stringify(jsonBorn);
 }
 
