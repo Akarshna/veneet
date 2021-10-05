@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Preesh API</h1>
+      <div class="fetch-group">
+      <input type="text" id="order-Id" placeholder="Order ID" />
+      <button id="fetch-btn">Fetch</button></div>
+      <button id="auth-btn" onclick="authenticate().then(loadClient)">Authorize and Load</button>
+    <button id="execute-btn" onclick="execute()">Execute</button>
+    </header>
+    <main>
+      <section>
+        <div class="buyer-details">
+          <div class="buyer-order">
+            <h3>Buyer Details</h3>
+          <input type="number" placeholder="New Order ID" name="" id="new-orderId" />
+
+          <fieldset>
+            <legend>Delivery Mode</legend>
+            <div>
+              <input type="radio" name="deliveryMode" id="cod" value="COD"  />
+              <label for="txt">COD</label>
+            </div>
+            <div>
+              <input type="radio" name="deliveryMode" id="prepaid"  value="PREPAID" />
+              <label for="csv">PREPAID</label>
+            </div>
+          </fieldset>
+          </div>
+        </div>
+        <div class="basic-inputs">
+          <input type="text" placeholder="First Name" id="fName"/>
+          <input type="text" placeholder="Last Name" id="lName"/>
+
+          <input type="tel" placeholder="Phone Number" id="phone"/>
+          <input type="email" placeholder="Email" name="" id="email" />
+
+          <input placeholder="Address Line 1" id="address-1" ></input>
+          <input placeholder="Address Line 2"id="address-2"></input>
+
+          <input type="text" maxlength="6"  id="pincode" placeholder="PINCODE"/>
+          <input type="text" placeholder="City" id="city"/>
+          <input type="text" placeholder="State" id="state"/>
+          <!-- Company name, Country FIXED -->
+        </div>
+        <div class="order-details">
+          <h3>Order Details</h3>
+          <p>Order Date:
+          <input type="date" placeholder="Order Date" id="order-date"/>
+          </p>
+          <div class="product-details">
+          <h3>Product Details</h3>
+          <ol>
+            <li id="generate-here"> 
+            
+          <input type="text" placeholder="Product Name" id="product-name1" class="product-name"/>
+          <input type="text" placeholder="SKU"  id="sku1" class="sku" />
+          <input type="text" placeholder="Quantity"  id="quantity1" class="quantity"/>
+          <input type="text" placeholder="Total Price = Total + GST " id="total1" class="total" />
+            </li>
+            <!-- <li>
+            <input type="checkbox" for="name2"id="product2"></input>
+          <input type="text" placeholder="Product Name" id="product-name2" class="product-name"/>
+          <input type="text" placeholder="SKU" name="" id="sku2" />
+          <input type="text" placeholder="Quantity" name="" id="quantity2" />
+          <input type="text" placeholder="Total Price = Total + GST " id="total2" />
+            </li>
+             <li>
+              <input type="checkbox" for="name2"id="product3"></input>
+          <input type="text" placeholder="Product Name" id="product-name3" class="product-name"/>
+          <input type="text" placeholder="SKU" name="" id="sku3" />
+          <input type="text" placeholder="Quantity" name="" id="quantity3" />
+          <input type="text" placeholder="Total Price = Total + GST " id="total3"/>
+            </li>
+            <li>
+              <input type="checkbox" for="name2"id="product4"></input>
+          <input type="text" placeholder="Product Name" id="product-name4" class="product-name"/>
+          <input type="text" placeholder="SKU" name="" id="sku4" />
+          <input type="text" placeholder="Quantity" name="" id="quantity4" />
+          <input type="text" placeholder="Total Price = Total + GST " id="total4"/>
+            </li> -->
+          </ol>
+          </div>
+          <!-- Category FIXED -->
+        </div>
+        <div class="package-weight">
+          <h3>Package Weight</h3>
+             
+          <input type="text" placeholder="Weight" id="weight"/>
+          <input type="text" placeholder="Length" name="" id="length" />
+          <input type="text" placeholder="Width" name="" id="width" />
+          <input type="text" placeholder="Height" id="height" />
+            
+        </div>
+
+      </section>
+      
+    </main>
+
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>

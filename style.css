@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  background-color: white;
+}
+header {
+  width: 100vw;
+  background-color: rgb(31, 57, 128);
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+header h1 {
+  margin: 6px 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.fetch-group {
+  margin: auto;
+}
+.fetch-group input {
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 0 !important;
+  border: none;
+}
+.fetch-group button {
+  padding: 10px 20px;
+  background-color: lightyellow;
+  border-radius: 1rem;
+  border: none;
+}
+.fetch-group button:hover {
+  background-color: burlywood;
+}
+#auth-btn,
+#execute-btn {
+  padding: 10px 20px;
+  background-color: rgb(136, 136, 136);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  margin: 6px;
+  margin-right: 40px;
+}
+#auth-btn:hover,
+#execute-btn:hover {
+  background-color: burlywood;
+}
+.buyer-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 140px;
+  gap: 2rem;
+  margin: 20px 50px 10px 50px;
+}
+.buyer-order {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  justify-content: center;
+}
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  /* height: 70px; */
+  padding: 10px;
+  border-radius: 1rem;
+  border: 2px solid rgb(20, 73, 220);
+}
+legend {
+  font-weight: 800;
+}
+input {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(31, 57, 128);
+  border-radius: 1rem;
+}
+input:hover {
+  border: 2px solid green;
+}
+.basic-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 20px 50px 10px 50px;
+}
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin: 20px 50px 10px 50px;
+}
+li input {
+  margin: 10px 20px auto 20px;
+}
+.package-weight {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 20px 50px 10px 50px;
+}
+h3 {
+  grid-column: 1/5;
+}
