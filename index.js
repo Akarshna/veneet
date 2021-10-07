@@ -134,7 +134,7 @@ function objectMaker(product) {
 function sabkaSum(total) {
   let sum = 0;
   for (let i = 0; i < total.length; i++) {
-    sum = sum + Number(total[i]);
+    sum = sum + Number(total[i].value);
   }
   return sum;
 }
@@ -145,16 +145,13 @@ function createNewJson() {
     seller_address:
       "LIG-52, SEC-32, CHANDIGARH ROAD, NEAR GREENLAND SCHOOL, LUDHIANA, 141008",
     seller_gst_tin: "03DPWPK4228G",
-    seller_gst_amount: 0,
+    
     consignee_gst_amount: 0,
-    integrated_gst_amount: 0,
-    ewbn: "",
+
     order_number: `${newOrderID.value}`,
-    invoice_number: invoiceNumber,
-    invoice_date: invoiceDate,
-    document_number: "",
-    document_date: "",
-    consignee_gst_tin: "",
+    invoice_number: `${invoiceNumber}`,
+    invoice_date: `${invoiceDate}`,
+
     consignee_name: `${firstName.value + " " + lastName.value}`,
     products_desc: "Clothing",
     payment_mode: getPaymentMode(),
