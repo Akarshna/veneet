@@ -117,16 +117,9 @@ function objectMaker(product) {
       product_name: pro,
       sku: sk,
       taxable_value: tot,
-      description: "",
+      
       quantity: quan,
-      length: 0,
-      height: 0,
-      breadth: 0,
-      weight: 0,
-      hsn_code: "",
-      cgst_tax_value: 0,
-      sgst_tax_value: 0,
-      igst_tax_value: 0,
+      
     };
     items.push(obiject);
   }
@@ -163,12 +156,12 @@ function createNewJson() {
     commodity_value: sabkaSum(total),
     cod_amount: sabkaSum(total),
     quantity: sabkaSum(quantity),
-    templateName: "",
-    weight: weight.value,
-    length: length.value,
-    height: height.value,
-    width: width.value,
-    return_reason: "",
+
+    weight: Number(weight.value),
+    length:  Number(length.value),
+    height:  Number(height.value),
+    width:  Number(width.value),
+   // return_reason: "",
     drop_location: {
       location_type: "Office",
       address: "LIG-52, SEC-32, CHANDIGARH ROAD, NEAR GREENLAND SCHOOL",
