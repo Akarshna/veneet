@@ -2,7 +2,7 @@
 const orderId = document.querySelector("#order-Id");
 const fetchButton = document.querySelector("#fetch-btn");
 let newOrderID = document.getElementById("new-orderId");
-let newOrder = newOrderID.value;
+
 // referencing Names, email, numbers, address, state, city
 
 const firstName = document.getElementById("fName");
@@ -149,7 +149,7 @@ function createNewJson() {
     consignee_gst_amount: 0,
     integrated_gst_amount: 0,
     ewbn: "",
-    order_number: newOrder,
+    order_number: newOrderID.value,
     invoice_number: invoiceNumber,
     invoice_date: invoiceDate,
     document_number: "",
