@@ -149,7 +149,7 @@ function createNewJson() {
     consignee_gst_amount: 0,
     integrated_gst_amount: 0,
     ewbn: "",
-    order_number: newOrderID.value,
+    order_number: `${newOrderID.value}`,
     invoice_number: invoiceNumber,
     invoice_date: invoiceDate,
     document_number: "",
