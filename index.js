@@ -163,14 +163,14 @@ function createNewJson() {
     width:  Number(width.value),
    // return_reason: "",
     drop_location: {
-      location_type: "Office",
-      address: "LIG-52, SEC-32, CHANDIGARH ROAD, NEAR GREENLAND SCHOOL",
-      city: "LUDHIANA",
-      state: "PUNJAB",
+           location_type: "Home",
+      address: `${address1 + ", " + address2}`,
+      city: `${city.value}`,
+      state: `${state.value}`,
       country: "INDIA",
-      name: "BOFRIKE",
-      phone: 8417077569,
-      pin: 141008,
+      name: `${firstName.value + " " + lastName.value}`,
+      phone: Number(phone.value),
+      pin: Number(pincode.value)
     },
     pickup_location: {
      "name": "LDH Office"
