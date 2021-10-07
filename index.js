@@ -164,7 +164,7 @@ function createNewJson() {
    // return_reason: "",
     drop_location: {
            location_type: "Home",
-      address: `${address1 + ", " + address2}`,
+      address: `${address1.value + ", " + address2.value}`,
       city: `${city.value}`,
       state: `${state.value}`,
       country: "INDIA",
