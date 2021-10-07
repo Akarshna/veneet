@@ -1,7 +1,7 @@
 //Order ID details and fetch Button= 10166408
 const orderId = document.querySelector("#order-Id");
 const fetchButton = document.querySelector("#fetch-btn");
-let newOrderID = document.getElementById("new-orderId");
+let newOrderID = document.getElementById("neworderId");
 
 // referencing Names, email, numbers, address, state, city
 
