@@ -183,25 +183,11 @@ function createNewJson() {
       pin: 141008,
     },
     pickup_location: {
-      location_type: "Office",
-      address: "LIG-52, SEC-32, CHANDIGARH ROAD, NEAR GREENLAND SCHOOL",
-      city: "LUDHIANA",
-      state: "PUNJAB",
-      country: "INDIA",
-      name: "BOFRIKE",
-      phone: 8417077569,
-      pin: 141008,
-    },
+     "name": "LDH Office"
+ },
     return_location: {
-      location_type: "Office",
-      address: "LIG-52, SEC-32, CHANDIGARH ROAD, NEAR GREENLAND SCHOOL",
-      city: "LUDHIANA",
-      state: "PUNJAB",
-      country: "INDIA",
-      name: "BOFRIKE",
-      phone: 8417077569,
-      pin: 141008,
-    },
+      "name": "LDH Office"
+ },
     items: items,
   };
   return JSON.stringify(jsonBorn);
@@ -259,6 +245,7 @@ function execute() {
       function (response) {
         // Handle the results here (response.result has the parsed body).
         console.log("Response", response);
+        console.log("Mission Successful);
       },
       function (err) {
         console.error("Execute error", err);
